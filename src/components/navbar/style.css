@@ -10,7 +10,7 @@
     /* background-color: rgb(117, 236, 13); */
 }
 .navbar-wrapper>ul>li{
-    background-color: brown;
+    /*background-color: brown;*/
     flex: 1;
     border-radius: 5px;
     display: grid;
@@ -18,8 +18,9 @@
     justify-content: center;
 }
 .navbar-wrapper>ul>li>ul{
+    /*background-color: aquamarine;*/
     display: flex;
-    gap: 7px;
+    gap: 15px;
 }
 .brand-logo{
     height: 80px;

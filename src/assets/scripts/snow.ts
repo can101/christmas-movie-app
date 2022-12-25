@@ -7,7 +7,7 @@ export function snowGenerator() {
 
         let embCSS = '.embed-snow{position: absolute;width: 10px;height: 10px;background: white;border-radius: 50%;margin-top:-10px}'
         let embHTML = ''
-        for (let i = 1; i < 120; i++) {
+        for (let i = 1; i < 60; i++) {
             embHTML += '<i class="embed-snow"></i>'
             let rndX = (embRand(0, 1000000) * 0.0001),
                 rndO = embRand(-100000, 100000) * 0.0001,
@@ -18,11 +18,7 @@ export function snowGenerator() {
         embedSnow = document.createElement('div')
         embedSnow.id = 'embed--snow'
         embedSnow.innerHTML = '<style>#embed--snow{position:fixed;left:0;top:0;bottom:0;width:100vw;height:100vh;overflow:hidden;z-index:999;pointer-events:none}' + embCSS + '</style>' + embHTML
-        // document.body.appendChild(embedSnow)
         const root=document.querySelector('.App');
         root?.appendChild(embedSnow)
-        console.log('====================================');
-        console.log(root);
-        console.log('====================================');
     }
 }
