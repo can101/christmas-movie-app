@@ -1,0 +1,26 @@
+.navbar-wrapper{
+    height: 120px;
+    /* background-color: cornflowerblue; */
+    display: grid;
+    align-items: center;
+}
+.navbar-wrapper>ul{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: rgb(117, 236, 13); */
+}
+.navbar-wrapper>ul>li{
+    background-color: brown;
+    flex: 1;
+    border-radius: 5px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.navbar-wrapper>ul>li>ul{
+    display: flex;
+    gap: 7px;
+}
+.brand-logo{
+    height: 80px;
+}
