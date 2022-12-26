@@ -1,4 +1,12 @@
 .banner-container{
-    background-color: aqua;
+    color: white;
     height: 50px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(50% 59719.68% at 50% 50%, #060606 0%, #000000 100%);}
+.banner-text-highlight{
+    text-decoration: underline 3px;
+    text-decoration-color: #FFE81F;
+    text-decoration-style: solid;
 }

@@ -1,8 +1,12 @@
 @import './reset.css';
 @import './normalize.css';
 
-body{
-  background-color: #000;
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #000;
 }
 
 
