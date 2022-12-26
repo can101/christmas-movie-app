@@ -1,0 +1,28 @@
+.carousel-container {
+    /*background: blue;*/
+    height: 500px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.carousel-container:before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.video-container {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.image-carousel-wrapper{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}

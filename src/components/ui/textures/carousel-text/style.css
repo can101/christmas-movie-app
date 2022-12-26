@@ -1,0 +1,54 @@
+.carousel-text-container {
+    /*background-color: #FFE81F;*/
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 20px;
+    text-transform: uppercase;
+    height: 250px;
+    color: rgba(255, 255, 255, 0.22);
+}
+
+.carousel-text-container > div {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-text-container > div:nth-child(1) {
+    /*color: aqua;*/
+    height: 20%;
+    align-items: end;
+    /*background-color: pink;*/
+    font-size: 15px;
+    padding-bottom: 5px;
+    font-weight: 400;
+}
+
+.carousel-text-container > div:nth-child(2) {
+    /*color: blueviolet;*/
+    /*background-color: aquamarine;*/
+    font-size: 70px;
+    transform: scaleY(2);
+    height: 60%;
+    overflow: hidden;
+    font-weight: 900;
+    align-items: center;
+    font-family: 'Fjalla One', sans-serif;
+    /*color: #FFE81F;*/
+    /*mix-blend-mode: screen;*/
+    /*text-shadow: 0 0 5px rgba(0, 0, 0, 0.62);*/
+    transition: 1s linear ease-in;
+}
+
+.carousel-text-container > div:nth-child(3) {
+    height: 20%;
+    /*background-color: rgba(247, 155, 45, 0.7);*/
+    padding-top: 5px;
+    align-items: self-start;
+}
+.slick-current>div>.carousel-text-container{
+    color: #fff;
+    transition: 1s ease-in linear;
+}
+.slick-current>div>.carousel-text-container>div:nth-child(2){
+    text-shadow: 5px 5px 0 #ffe81f;
+}
