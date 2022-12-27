@@ -1,6 +1,4 @@
 import React, {FC, ReactElement} from 'react'
-// @ts-ignore
-import Text from 'react-svg-text';
 import './style.css'
 
 interface textProps {
@@ -17,9 +15,6 @@ const Carousel: FC<textProps> = ({title="the sin",directory="deborah cow",episod
             </div>
             <div>
                 <span>{title}</span>
-                {/*<svg>*/}
-                {/*    <Text verticalAnchor="start">{title}</Text>*/}
-                {/*</svg>*/}
             </div>
             <div>
                 <span>directed by :{directory}</span>
