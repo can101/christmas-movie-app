@@ -5,10 +5,12 @@ export function snowGenerator() {
             return Math.floor(Math.random() * (b - a + 1)) + a
         }
 
-        let embCSS = '.embed-snow{position: absolute;width: 10px;height: 10px;background: white;border-radius: 50%;margin-top:-10px}'
+        // let embCSS = '.embed-snow{position: absolute;width: 10px;height: 10px;background: white;border-radius: 50%;margin-top:-10px}'
+        let embCSS = '.embed-snow{position: absolute;font-size:10px;color: white;border-radius: 50%;margin-top:-10px}'
         let embHTML = ''
-        for (let i = 1; i < 60; i++) {
-            embHTML += '<i class="embed-snow"></i>'
+        for (let i = 1; i < 90; i++) {
+            // embHTML += '<i class="embed-snow"></i>'
+            embHTML += '<i class="fa-solid fa-snowflake embed-snow"></i>'
             let rndX = (embRand(0, 1000000) * 0.0001),
                 rndO = embRand(-100000, 100000) * 0.0001,
                 rndT = (embRand(3, 8) * 10).toFixed(2),
