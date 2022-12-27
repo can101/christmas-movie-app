@@ -1,15 +1,15 @@
-import React, {FC, ReactNode} from 'react'
+import React, {FC} from 'react'
+import {HiOutlineChevronDown} from 'react-icons/hi'
 import './style.css'
 
 interface iconButtonProps {
-    icon: ReactNode,
-    click: () => void
+    click?: () => void
 }
 
-const IconButton: FC<iconButtonProps> = ({icon, click = () => {}}) => {
+const IconButton: FC<iconButtonProps> = ({ click = () => {console.log("clicked the arrow button")}}) => {
     return (
-        <button onClick={click} className={"icon-button"}>
-            {icon}
+        <button onClick={click} className={"down-button"}>
+            <HiOutlineChevronDown size={"3em"}/>
         </button>
     )
 }

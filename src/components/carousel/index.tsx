@@ -4,16 +4,16 @@ import Video from '../../assets/videos/bg-video.mp4'
 import Slider from "react-slick";
 import './style.css'
 import Text from '../ui/textures/carousel-text'
+import DownButton from "../ui/buttons/down-button";
 
 const Carousel: FC = (): ReactElement => {
     const settings = {
         dots: false,
         arrows: false,
         centerMode: true,
-        // slidesPerRow:3,
         slidesToShow: 3,
         autoplay: true,
-        centerPadding:"30px",
+        centerPadding: "30px",
         autoplaySpeed: 6600
     };
     return (
@@ -31,6 +31,7 @@ const Carousel: FC = (): ReactElement => {
                         <Text/>
                     </Slider>
                 </div>
+                <DownButton/>
             </div>
         </>
 
