@@ -1,0 +1,29 @@
+footer {
+    height: 150px;
+    /*width: 100%;*/
+    background: rgba(31, 31, 31, 0.22);
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    /*flex-direction: column;*/
+    border-top-right-radius:10px ;
+    border-top-left-radius:10px ;
+}
+.info-title{
+    font-size: 18px;
+    color: #ffe81f;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.footer-wrapper{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+footer>div>ul{
+    display: flex;
+    gap: 20px;
+}
