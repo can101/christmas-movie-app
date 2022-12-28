@@ -2,7 +2,7 @@ import Axios from "axios";
 
 const instance = Axios.create({
     baseURL: "/api",
-    headers: {'X-Custom-Header': 'foobar'}
+    headers: {"Access-Control-Allow-Headers": "*"}
 });
 
 export default  instance;
