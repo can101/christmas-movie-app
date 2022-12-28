@@ -2,7 +2,6 @@
     /*background-color: #FFE81F;*/
     border-radius: 10px;
     text-align: center;
-    margin: 0 20px;
     text-transform: uppercase;
     height: 250px;
     color: rgba(255, 255, 255, 0.22);
@@ -15,7 +14,7 @@
 
 .carousel-text-container > div:nth-child(1) {
     /*color: aqua;*/
-    height: 20%;
+    height: 10%;
     align-items: end;
     /*background-color: pink;*/
     font-size: 15px;
@@ -26,9 +25,10 @@
 .carousel-text-container > div:nth-child(2) {
     /*color: blueviolet;*/
     /*background-color: aquamarine;*/
-    font-size: 70px;
-    transform: scaleY(2);
-    height: 60%;
+    font-size: 60px;
+    line-height: 1.2;
+    /*transform: scaleY(2);*/
+    height: 80%;
     overflow: hidden;
     font-weight: 900;
     align-items: center;
@@ -37,13 +37,15 @@
     /*mix-blend-mode: screen;*/
     /*text-shadow: 0 0 5px rgba(0, 0, 0, 0.62);*/
     transition: 1s linear ease-in;
+    letter-spacing: .8px;
 }
 
 .carousel-text-container > div:nth-child(3) {
-    height: 20%;
+    height: 10%;
     /*background-color: rgba(247, 155, 45, 0.7);*/
     padding-top: 5px;
     align-items: self-start;
+    font-size: 15px;
 }
 .slick-current>div>.carousel-text-container{
     color: #fff;
