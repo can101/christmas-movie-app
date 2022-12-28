@@ -25,6 +25,25 @@ const Carousel: FC = (): ReactElement => {
         autoplay: true,
         centerPadding: "0px",
         autoplaySpeed: 6600,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 900,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    initialSlide: 1
+                }
+            }
+        ]
     };
     return (
         <>
@@ -43,7 +62,7 @@ const Carousel: FC = (): ReactElement => {
                 <DownButton click={() => {
                     // @ts-ignore
                     // document.getElementsByClassName("section-second").scrollIntoView()
-                    const target = document.querySelector('.target-section');
+                    const target = document.querySelector('.target');
                     // @ts-ignore
                     target.scrollIntoView({behavior: 'smooth'});
                 }}/>

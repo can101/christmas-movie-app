@@ -1,15 +1,17 @@
-.navbar-wrapper{
+.navbar-wrapper {
     height: 120px;
     /* background-color: cornflowerblue; */
     display: grid;
     align-items: center;
 }
-.navbar-wrapper>ul{
+
+.navbar-wrapper > ul {
     display: flex;
     justify-content: space-between;
     /* background-color: rgb(117, 236, 13); */
 }
-.navbar-wrapper>ul>li{
+
+.navbar-wrapper > ul > li {
     /*background-color: brown;*/
     flex: 1;
     border-radius: 5px;
@@ -17,11 +19,25 @@
     align-items: center;
     justify-content: center;
 }
-.navbar-wrapper>ul>li>ul{
+
+.navbar-wrapper > ul > li > ul {
     /*background-color: aquamarine;*/
     display: flex;
     gap: 15px;
 }
-.brand-logo{
+
+.brand-logo {
     height: 80px;
+}
+
+@media (max-width: 900px) {
+    .navbar-wrapper > ul > li:first-child {
+        display: none;
+    }
+    .navbar-wrapper > ul > li:nth-child(2) {
+        flex: 4;
+        justify-content: flex-start;
+        padding-left: 20px;
+    }
+
 }

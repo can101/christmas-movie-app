@@ -26,8 +26,8 @@ const Banner: FC = (): ReactElement => {
     }, [])
     return (
         <div className='banner-container'>
-            <span>Yılbaşına son <span
-                className={"banner-text-highlight"}> {differenceDays} gün {differenceHours} saat {differenceMinutes} dakika {differenceSeconds} saniye kaldı</span></span>
+            <span>Yılbaşına son </span><span
+            className={"banner-text-highlight"}> {differenceDays} gün {differenceHours} saat {differenceMinutes} dakika {differenceSeconds} saniye kaldı</span>
         </div>
     )
 }

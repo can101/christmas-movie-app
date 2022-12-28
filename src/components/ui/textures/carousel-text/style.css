@@ -54,3 +54,8 @@
 .slick-current>div>.carousel-text-container>div:nth-child(2){
     text-shadow: 5px 5px 0 #ffe81f;
 }
+@media (max-width: 900px) {
+    .carousel-text-container > div:nth-child(2) {
+    font-size: 50px;
+    }
+}
