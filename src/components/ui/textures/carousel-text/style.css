@@ -3,8 +3,10 @@
     border-radius: 10px;
     text-align: center;
     text-transform: uppercase;
-    height: 250px;
+    height: 270px;
     color: rgba(255, 255, 255, 0.22);
+    margin: 0 20px;
+    cursor: pointer;
 }
 
 .carousel-text-container > div {
@@ -25,7 +27,7 @@
 .carousel-text-container > div:nth-child(2) {
     /*color: blueviolet;*/
     /*background-color: aquamarine;*/
-    font-size: 60px;
+    font-size: 50px;
     line-height: 1.2;
     /*transform: scaleY(2);*/
     height: 80%;
@@ -47,15 +49,22 @@
     align-items: self-start;
     font-size: 15px;
 }
-.slick-current>div>.carousel-text-container{
+
+.slick-current > div > .carousel-text-container {
     color: #fff;
     transition: 1s ease-in linear;
 }
-.slick-current>div>.carousel-text-container>div:nth-child(2){
+
+link-reset {
+    text-decoration: none;
+}
+
+.slick-current > div > .carousel-text-container > div:nth-child(2) {
     text-shadow: 5px 5px 0 #ffe81f;
 }
+
 @media (max-width: 900px) {
     .carousel-text-container > div:nth-child(2) {
-    font-size: 50px;
+        font-size: 50px;
     }
 }
