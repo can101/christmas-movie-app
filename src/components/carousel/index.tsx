@@ -53,7 +53,7 @@ const Carousel: FC = (): ReactElement => {
                     <Slider {...settings}>
                         {value.map((item: any, index: number) => {
                             return (
-                                <Text key={index} directory={item?.director} title={item?.title}
+                                <Text key={index} directory={item?.director} id={item.episode_id} title={item?.title}
                                       episode={`episode ${item?.episode_id}`}/>
                             );
                         })}
