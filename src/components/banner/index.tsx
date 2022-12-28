@@ -8,7 +8,7 @@ const Banner: FC = (): ReactElement => {
     const [differenceSeconds, setDifferenceSeconds] = useState(0);
     const timeCalculator = () => {
         setInterval(() => {
-            const countDownDate = new Date(new Date().getUTCFullYear(), 11, 31).getTime();
+            const countDownDate = new Date(new Date().getUTCFullYear(), 11, 31,23,59).getTime();
             var now = new Date().getTime();
             var distance = countDownDate - now;
             var days = Math.floor(distance / (1000 * 60 * 60 * 24));
