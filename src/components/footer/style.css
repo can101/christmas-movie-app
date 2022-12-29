@@ -1,6 +1,9 @@
 footer {
     box-sizing: border-box;
-    min-height: 150px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: rgba(31, 31, 31, 0.22);
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
@@ -39,10 +42,14 @@ footer {
 }
 
 @media (max-width: 900px) {
+    .footer{
+        height: auto;
+        padding: 30px;
+    }
     .footer-wrapper {
         flex-direction: column;
-        gap: 10px;
-        height: auto;
-        padding: 20px 0;
+    }
+    .logo-and-slogan-box{
+        margin-bottom: 30px;
     }
 }
