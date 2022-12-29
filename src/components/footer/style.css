@@ -1,36 +1,48 @@
 footer {
     box-sizing: border-box;
-    height: 150px;
+    min-height: 150px;
     background: rgba(31, 31, 31, 0.22);
-    border-top-right-radius:10px ;
-    border-top-left-radius:10px ;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
-.info-title{
+
+.info-title {
     font-size: 18px;
     color: #ffe81f;
     font-weight: bold;
 }
 
-.footer-wrapper{
+.footer-wrapper {
     height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.footer-wrapper>div>ul{
+
+.footer-wrapper > div > ul {
     display: flex;
     gap: 20px;
-    margin-top:20px ;
+    margin-top: 20px;
 }
-.logo-and-slogan-box{
+
+.logo-and-slogan-box {
     /*background: red;*/
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column-reverse;
 }
-.logo-and-slogan-box>span{
+
+.logo-and-slogan-box > span {
     color: rgba(255, 255, 255, 0.42);
     margin-top: 10px;
 }
 
+@media (max-width: 900px) {
+    .footer-wrapper {
+        flex-direction: column;
+        gap: 10px;
+        height: auto;
+        padding: 20px 0;
+    }
+}

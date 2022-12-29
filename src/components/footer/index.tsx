@@ -3,9 +3,8 @@ import IconButton from "../ui/buttons/icon-button";
 import {FaFacebook, FaInstagram, FaTwitter, FaYoutube} from "react-icons/fa";
 import imgPath from '../../assets/images/png/logo-rm-bg.png'
 import {IconContext} from "react-icons";
-import './style.css'
-import ImgPath from "../../assets/images/png/logo.png";
 import {Link} from "react-router-dom";
+import './style.css'
 
 const Footer: FC = (): ReactElement => {
     return (
