@@ -3,8 +3,8 @@ import Axios from '../../utils/Axios'
 
 const getAllFilms = createAsyncThunk(
     "get/film-list", async () => {
-        const {data,status} =await Axios("/films");
-        if(status==200){
+        const {data, status} = await Axios.get("/films");
+        if (status == 200) {
             return data
         }
     }
