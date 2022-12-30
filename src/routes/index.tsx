@@ -17,10 +17,6 @@ const router = createBrowserRouter([
                 element: <Home/>,
             },
             {
-                path: "about",
-                element: <div>About</div>,
-            },
-            {
                 path: "details/:id",
                 element: <FilmDetails/>,
             },
@@ -29,7 +25,7 @@ const router = createBrowserRouter([
                 element: <Search/>,
             },
         ]
-    },
+    }
 ]);
 
 export default router;
