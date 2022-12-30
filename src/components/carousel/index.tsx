@@ -27,12 +27,20 @@ const Carousel: FC = (): ReactElement => {
         autoplaySpeed: 6600,
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 1324,
                 settings: {
                     slidesToShow: 3,
-                    slidesToScroll: 3,
+                    slidesToScroll: 1,
                     infinite: true,
                     dots: true
+                }
+            },
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    initialSlide: 1
                 }
             },
             {
@@ -53,7 +61,7 @@ const Carousel: FC = (): ReactElement => {
                     <Slider {...settings}>
                         {value.map((item: any, index: number) => {
                             return (
-                                <Text key={index} directory={item?.director} id={item.episode_id} title={item?.title}
+                                <Text key={index} directory={item?.director} id={index+1} title={item?.title}
                                       episode={`episode ${item?.episode_id}`}/>
                             );
                         })}
