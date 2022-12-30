@@ -5,15 +5,24 @@ interface sectionProps {
     imgUrl: string,
     imgDesc: string,
     summary: string,
+    title: string,
     isReverse?: boolean,
     isTarget?: boolean
 }
 
-const Banner: FC<sectionProps> = ({imgDesc, imgUrl, isReverse = false, summary, isTarget=false}): ReactElement => {
+const Banner: FC<sectionProps> = ({
+                                      imgDesc,
+                                      imgUrl,
+                                      title,
+                                      isReverse = false,
+                                      summary,
+                                      isTarget = false
+                                  }): ReactElement => {
     return (
-        <section className={`card-section-container ${isTarget?"target":""} ${isReverse?"reverse":""}`}>
+        <section className={`card-section-container ${isTarget ? "target" : ""} ${isReverse ? "reverse" : ""}`}>
             <div>
                 <p>
+                    <span className={"card-title"}>{title}</span>
                     {summary}
                 </p>
             </div>

@@ -24,6 +24,20 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    flex-direction: column;
+}
+
+.card-title {
+    display: block;
+    /*background: red;*/
+    text-align: left;
+    font-size: 25px;
+    width: 100%;
+    margin-bottom:10px ;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: #ffffff;
 }
 
 .card-section-container > div > p {

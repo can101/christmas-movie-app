@@ -1,6 +1,6 @@
 import React, {FC, ReactElement} from 'react'
 import Carousel from '../../components/carousel'
-import imgPath from '../../assets/images/png/a.png'
+import imgPath from '../../assets/images/png/a1.png'
 import sImgPath from '../../assets/images/png/second.png'
 import yImgPath from '../../assets/images/png/yoda.png'
 import './style.css'
@@ -9,6 +9,7 @@ import Card from "../../components/card";
 const index: FC = (): ReactElement => {
    const cardList= [
        {
+           title:"What is Star Wars ?",
            summary:` Star Wars is a science fiction media franchise created by George Lucas. It includes a series of
                         films, television shows, and other works set in a galaxy far, far away and featuring a diverse
                         cast
@@ -27,6 +28,7 @@ const index: FC = (): ReactElement => {
            isTarget:true
        },
         {
+            title:"who is dart wader ?",
             summary:`A dart wader is a type of wading bird that belongs to the family Scolopacidae. These birds are
             known for their long, thin legs and sharp, pointed bills, which they use to wade through shallow
             water in search of food. Dart waders are typically found near coastal areas, marshes, and
@@ -39,6 +41,7 @@ const index: FC = (): ReactElement => {
         }
        ,
        {
+           title:"who is yoda ?",
            summary:`Yoda is a fictional character in the Star Wars franchise, created by George Lucas. He is a
                         small, green, humanoid alien with pointed ears and a distinctive facial appearance. Yoda is a
                         highly skilled Jedi Master, known for his wisdom, knowledge of the Force, and combat abilities.
