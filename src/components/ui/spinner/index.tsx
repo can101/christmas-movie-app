@@ -6,7 +6,11 @@ interface textProps {
 }
 
 const Carousel: FC = (): ReactElement => {
-    return <span className={"spinner-box"}></span>
+    return (
+        <div className={"spinner-container"}>
+            <span className={"spinner-box"}></span>
+        </div>
+    )
 }
 
 export default Carousel
