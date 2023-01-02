@@ -1,0 +1,31 @@
+.error-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.loading-animation-box {
+    /*    background: purple;*/
+    height: 500px;
+}
+
+.error-container > div {
+    color: #ffe81f;
+}
+
+.error-container > div > span {
+    background-color: rgba(255, 255, 255, 0.11);
+    backdrop-filter: blur(30px);
+    padding: 10px;
+    margin-right:5px ;
+    border-radius: 5px;
+}
+
+@media (max-width: 900px) {
+    .loading-animation-box {
+        /*    background: purple;*/
+        height: 80vh;
+    }
+}
