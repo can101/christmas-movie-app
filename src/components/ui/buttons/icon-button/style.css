@@ -84,4 +84,12 @@
     }
 }
 
+@media (max-width: 900px) {
+    .icon-button:hover{
+      background: white !important;
+    }
+    .icon-button:active{
+        background: #ffe81f !important;
+    }
+}
 

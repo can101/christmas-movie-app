@@ -13,5 +13,4 @@ const IconButton: FC<iconButtonProps> = ({icon, click = () => {}}) => {
         </button>
     )
 }
-
 export default IconButton

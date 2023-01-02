@@ -1,8 +1,6 @@
 import React, {FC, ReactElement, ReactNode} from 'react'
-// @ts-ignore
-import Text from 'react-svg-text';
-import './style.css'
 import {AiOutlineSearch} from 'react-icons/ai'
+import './style.css'
 
 type  inputTypes = "text" | "numeric";
 
