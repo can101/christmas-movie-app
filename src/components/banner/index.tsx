@@ -28,7 +28,7 @@ const Banner: FC = (): ReactElement => {
         <div className='banner-container'>
             <span>{differenceDays} d, {differenceHours} h,</span><span
             className={"banner-text-highlight"}>
-             {differenceMinutes} m, and {differenceSeconds} s left until New Year's Day.</span>
+             {differenceMinutes} m, and {differenceSeconds} s left until New Year's Day</span>
         </div>
     )
 }
