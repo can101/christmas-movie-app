@@ -12,8 +12,9 @@ export const counterSlice = createSlice({
     name: 'film-founder',
     initialState,
     reducers: {
-        updateState(state, action) {
-            console.log(action)
+        resetState(state, action) {
+            state.value = {}
+            state.loading = false
         }
     },
     extraReducers: (builder) => {
@@ -23,7 +24,8 @@ export const counterSlice = createSlice({
             })
             .addCase(filmFoundAsyncThunk.fulfilled, (state, action: PayloadAction<any>) => {
                 state.loading = false;
-                const foundedFilmImage = ImageConstants[~~action.payload.eposide_id]
+                let foundedFilmImage = ImageConstants[action?.payload?.episode_id-1]
+                console.log(foundedFilmImage,action?.payload?.episode_id-1)
                 const object = Object.assign({}, {image: foundedFilmImage}, action.payload);
                 state.value = object;
                 state.loading = false;
@@ -35,6 +37,6 @@ export const counterSlice = createSlice({
 })
 
 // Action creators are generated for each case reducer function
-export const {} = counterSlice.actions
+export const {resetState} = counterSlice.actions
 
 export default counterSlice.reducer

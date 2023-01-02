@@ -4,7 +4,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {useNavigate, useParams} from 'react-router-dom'
 import filmFoundAsyncThunk from '../../features/filmFoundFeatures/filmFoundAsyncThunk'
 import HeroContent from "../../components/hero-content";
-import {resetState} from "../../features/filmFoundFeatures/index";
+import {resetState} from "../../features/filmFoundFeatures";
 import {BsArrowLeftSquare} from 'react-icons/bs'
 import IconButton from "../../components/ui/buttons/icon-button";
 import Spinner from "../../components/ui/spinner";
