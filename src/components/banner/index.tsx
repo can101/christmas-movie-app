@@ -8,7 +8,7 @@ const Banner: FC = (): ReactElement => {
     const [differenceSeconds, setDifferenceSeconds] = useState(0);
     const timeCalculator = () => {
         setInterval(() => {
-            const countDownDate = new Date(new Date().getUTCFullYear(), 11, 31,23,59).getTime();
+            const countDownDate = new Date(new Date().getUTCFullYear(), 11, 31, 23, 59).getTime();
             var now = new Date().getTime();
             var distance = countDownDate - now;
             var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -26,8 +26,9 @@ const Banner: FC = (): ReactElement => {
     }, [])
     return (
         <div className='banner-container'>
-            <span>Yılbaşına son </span><span
-            className={"banner-text-highlight"}> {differenceDays} gün {differenceHours} saat {differenceMinutes} dakika {differenceSeconds} saniye kaldı</span>
+            <span>{differenceDays} d, {differenceHours} h,</span><span
+            className={"banner-text-highlight"}>
+             {differenceMinutes} m, and {differenceSeconds} s left until New Year's Day.</span>
         </div>
     )
 }
