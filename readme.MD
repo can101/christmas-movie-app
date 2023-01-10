@@ -9,6 +9,7 @@ style="border-radius:10px;"
 </a>
 <p><b><h1>A Star Wars-themed Christmas web application</h1></b></p>
 <p><h4>``May the force be with you, always``</h4></p>
+</div>
 
 ## Installation
 
