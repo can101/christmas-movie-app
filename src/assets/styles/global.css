@@ -8,5 +8,25 @@ html {
 body {
     background-color: #000;
 }
+/* default dark scroll bar */
+body::-webkit-scrollbar {
+    width: 10px;
+    background-color: #000;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, .2);
+    border-radius:0px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.35);
+    cursor: pointer;
+}
+
+
+
+
 
 
