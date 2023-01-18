@@ -14,8 +14,6 @@ import charactersPath from '../../assets/images/icons/png/chracters.png'
 const Carousel: FC = (): ReactElement => {
     const {value, loading} = useSelector((state: any) => state.found)
 
-    console.log("value", value)
-
     interface sliderCardProps {
         length: number,
         source_url: string,
