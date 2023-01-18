@@ -1,5 +1,5 @@
 import React, {FC, ReactElement, Fragment} from 'react'
-import ImgPath from '../../assets/images/png/logo.png'
+import ImgPath from '../../assets/images/png/logo-rm-bg.png'
 // @ts-ignore
 import {FaBeer, FaFacebook, FaInstagram, FaYoutube, FaTwitter} from 'react-icons/fa';
 // @ts-ignore
@@ -38,7 +38,7 @@ const Navbar: FC = (): ReactElement => {
                             </ul>
                         </li>
                         <li>
-                            <Link to={"/"}>
+                            <Link to={"/"} >
                                 <img src={ImgPath} alt="star-wars"
                                      className='brand-logo'/>
                             </Link>
