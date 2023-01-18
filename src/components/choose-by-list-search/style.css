@@ -1,0 +1,50 @@
+.choose-box {
+    margin: 10px 0;
+    gap: 2px;
+    display: flex;
+    justify-content: center;
+}
+
+.choose-item {
+    background-color: rgba(255, 255, 255, 0.09);
+    padding: 15px 20px;
+    border-radius: 5px;
+    backdrop-filter: blur(5px);
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    scale: .88;
+}
+
+.choose-item:hover:not(.selected-item) {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    animation-delay: .2s;
+    animation: jello-horizontal .9s linear both;
+}
+
+
+.choose-item-text {
+    color: white;
+}
+
+.selected-item {
+    background-color: rgb(255, 232, 31);
+    transition: all .2s ease;
+    user-select: none;
+}
+
+.selected-item > .choose-item-text {
+    color: #000;
+}
+
+@media (max-width: 900px) {
+    .choose-box {
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 10px auto;
+    }
+    .choose-item{
+        padding: 10px 20px;
+    }
+}
