@@ -10,5 +10,5 @@ export const store = configureStore({
         search: searchReducer
     },
     middleware:(getDefaultMiddleware)=>getDefaultMiddleware({serializableCheck: false,}),
-    devTools: process.env.NODE_ENV !== "production",
+    devTools: import.meta.env.NODE_ENV !== "production",
 })
