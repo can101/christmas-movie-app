@@ -25,15 +25,16 @@
     display: flex;
     gap: 15px;
 }
-
 .brand-logo {
     height: 80px;
 }
+
 
 @media (max-width: 900px) {
     .navbar-wrapper > ul > li:first-child {
         display: none;
     }
+
     .navbar-wrapper > ul > li:nth-child(2) {
         flex: 4;
         justify-content: flex-start;

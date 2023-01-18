@@ -1,10 +1,11 @@
-.search-input-container{
-/*background-color: pink;*/
-    width: 95%;
-    margin: 0 auto;
+.search-input-container {
+    /*background-color: pink;*/
+    width: 100%;
+    /*margin: 0 auto;*/
     position: relative;
 }
-.search-input-container>input{
+
+.search-input-container > input {
     box-sizing: border-box;
     background-color: rgba(255, 255, 255, 0.1);
     border: 3px solid transparent;
@@ -18,22 +19,61 @@
     caret-color: #ffe81f;
     transition: all 200ms ease-in-out;
 }
-.search-input-container>input::placeholder{
+
+.search-input-container > input::placeholder {
     text-transform: lowercase;
     color: #545454;
 }
-.search-input-container>input:hover{
 
-}
-.search-input-container>input:focus{
-   border-color: #ffe81f;
+.search-input-container > input:focus {
+    border-color: #ffe81f;
     background: none;
 }
-.start-icon{
+
+.start-icon {
     color: #ffe81f;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     left: 15px;
     z-index: 10;
+}
+
+.delete-icon {
+    color: #ffe81f;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    display: flex;
+    jsutify-content: center;
+    align-items: center;
+    right: 15px;
+    z-index: 10;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.delete-icon > span {
+    height: 40px;
+    width: 40px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.09);
+    backdrop-filter: blur(10px);
+    animation: slide-right-to-left 1s ease-in-out;
+}
+
+.delete-icon > span:hover>svg {
+    animation: jello-horizontal .9s linear both infinite;
+}
+
+@keyframes slide-right-to-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
