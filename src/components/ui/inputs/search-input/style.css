@@ -45,7 +45,7 @@
     height: 100%;
     top: 0;
     display: flex;
-    jsutify-content: center;
+    justify-content: center;
     align-items: center;
     right: 15px;
     z-index: 10;
