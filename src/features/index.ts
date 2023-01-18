@@ -9,5 +9,6 @@ export const store = configureStore({
         found: filmFoundReducer,
         search: searchReducer
     },
-    middleware:(getDefaultMiddleware)=>getDefaultMiddleware({serializableCheck: false,})
+    middleware:(getDefaultMiddleware)=>getDefaultMiddleware({serializableCheck: false,}),
+    devTools: process.env.NODE_ENV !== "production",
 })
