@@ -6,7 +6,6 @@ const foundFilmToList = createAsyncThunk(
         const url = `/films/${id}`
         const {data, status} = await Axios.get(url);
         if (status == 200) {
-            console.log(data)
             return data
         }
     }

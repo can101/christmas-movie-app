@@ -25,7 +25,6 @@ export const counterSlice = createSlice({
             .addCase(filmFoundAsyncThunk.fulfilled, (state, action: PayloadAction<any>) => {
                 state.loading = false;
                 let foundedFilmImage = ImageConstants[action?.payload?.episode_id-1]
-                console.log(foundedFilmImage,action?.payload?.episode_id-1)
                 const object = Object.assign({}, {image: foundedFilmImage}, action.payload);
                 state.value = object;
                 state.loading = false;
