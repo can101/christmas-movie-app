@@ -14,13 +14,13 @@ import charactersPath from '../../assets/images/icons/png/chracters.png'
 const Carousel: FC = (): ReactElement => {
     const {value, loading} = useSelector((state: any) => state.found)
 
-    interface sliderCardProps {
+    interface Props {
         length: number,
         source_url: string,
         title: string
     }
 
-    const [slider, setSlider] = useState<sliderCardProps[]>([])
+    const [slider, setSlider] = useState<Props[]>([])
     useEffect(() => {
         const list = [
             {length: value?.characters?.length, title: "characters", source_url: charactersPath},

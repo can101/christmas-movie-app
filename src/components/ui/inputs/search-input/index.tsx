@@ -8,14 +8,14 @@ import './style.scss'
 
 type  inputTypes = "text" | "numeric" | "search";
 
-interface inputProps {
+interface Props {
     title?: string,
     placeholder?: string,
     inputType?: inputTypes,
     startIcon?: ReactNode,
 }
 
-const SearchInput: FC<inputProps> = ({
+const SearchInput: FC<Props> = ({
                                          placeholder = "Luke Skywalker",
                                          inputType = "text",
                                          startIcon = <AiOutlineSearch size={"2em"}/>

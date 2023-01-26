@@ -2,7 +2,7 @@ import React, {FC, ReactElement} from 'react'
 import './style.scss'
 import {useNavigate} from "react-router-dom";
 
-interface sectionProps {
+interface Props {
     title?: string,
     isReverse?: boolean,
     index?: number,
@@ -11,7 +11,7 @@ interface sectionProps {
 }
 
 
-const DCard: FC<sectionProps> = ({
+const DCard: FC<Props> = ({
                                      item,
                                      title,
                                      isReverse = false,

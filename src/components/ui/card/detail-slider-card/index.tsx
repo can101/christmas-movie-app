@@ -2,13 +2,13 @@ import React, {FC, ReactElement, ReactNode} from 'react'
 // @ts-ignore
 import './style.scss'
 
-interface sliderCardProps {
+interface Props {
     length: number,
     source_url: string,
     title: string
 }
 
-const Carousel: FC<sliderCardProps> = ({length, source_url, title}): ReactElement => {
+const Carousel: FC<Props> = ({length, source_url, title}): ReactElement => {
     return (
         <div className={"card-box"}>
             <div className={"card-content"}>

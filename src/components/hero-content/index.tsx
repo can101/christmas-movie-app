@@ -1,17 +1,17 @@
 import React, {FC, ReactElement,} from 'react';
 import './style.scss'
 
-interface HeroContentProps {
+interface Props {
     title: string;
     img_source: string;
     description: string;
     date: string;
 }
 
-const Footer: FC<HeroContentProps> = ({img_source, description, title,date}): ReactElement => {
+const Footer: FC<Props> = ({img_source, description, title, date}): ReactElement => {
     return (
         <section className="hero-content-container">
-            <div className="image-box-container"  data-date={date}>
+            <div className="image-box-container" data-date={date}>
                 <img loading={"lazy"} className={"image-box-element"} src={img_source} alt="hero-image"/>
             </div>
             <div className="text-box-container">

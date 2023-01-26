@@ -1,13 +1,13 @@
 import React, {FC, ReactElement, useState} from "react";
 import "./style.scss";
 
-interface chooseProps {
+interface Props {
     list: string[],
     value: string,
     onClick: (value: string) => void,
 }
 
-const SearchDetails: FC<chooseProps> = ({list, onClick, value}): ReactElement => {
+const SearchDetails: FC<Props> = ({list, onClick, value}): ReactElement => {
 
     const clickHandler = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
         onClick(e.currentTarget.innerText);

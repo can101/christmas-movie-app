@@ -1,7 +1,7 @@
 import React, {FC, ReactElement} from 'react'
 import './style.scss'
 
-interface sectionProps {
+interface Props {
     imgUrl: string,
     imgDesc: string,
     summary: string,
@@ -10,7 +10,7 @@ interface sectionProps {
     isTarget?: boolean
 }
 
-const Banner: FC<sectionProps> = ({
+const Banner: FC<Props> = ({
                                       imgDesc,
                                       imgUrl,
                                       title,
