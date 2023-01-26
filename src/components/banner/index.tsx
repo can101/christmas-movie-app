@@ -1,5 +1,5 @@
 import React, {useState, FC, ReactElement, useLayoutEffect} from 'react'
-import './style.css'
+import './style.scss'
 
 const Banner: FC = (): ReactElement => {
     const [differenceDays, setDifferenceDays] = useState(0);

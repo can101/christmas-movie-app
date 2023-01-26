@@ -1,5 +1,5 @@
 import React, {useEffect} from "react";
-import './style.css'
+import './style.scss'
 import SearchInput from "../../components/ui/inputs/search-input";
 import SearchDetails from "../../components/search-details";
 import Spinner from "../../components/ui/spinner";

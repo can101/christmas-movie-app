@@ -1,0 +1,25 @@
+@import "./src/assets/styles/root.scss";
+
+.banner-container {
+  color: white;
+  height: 50px;
+  @include center;
+  background: var(--dark-radial-gradient);
+  text-align: center;
+  gap: 5px;
+
+  @include tablet {
+    flex-direction: column;
+  }
+
+  @include mobile {
+    font-size: 13px;
+  }
+}
+
+.banner-text-highlight {
+  text-decoration: underline 3px;
+  text-decoration-color: var(--big-yellow-streak);
+  text-decoration-style: solid;
+}
+

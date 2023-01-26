@@ -1,5 +1,5 @@
 import react from "react";
-import "./style.css";
+import "./style.scss";
 import {useSelector} from "react-redux";
 import Card from "../cards/card";
 import React from "react";

@@ -1,6 +1,6 @@
 import {HiOutlineChevronUp} from "react-icons/hi";
 import React from "react";
-import './style.css'
+import './style.scss'
 
 const GoToTop = () => {
 

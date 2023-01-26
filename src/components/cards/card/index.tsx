@@ -1,5 +1,5 @@
 import React, {FC, ReactElement} from 'react'
-import './style.css'
+import './style.scss'
 import {useNavigate} from "react-router-dom";
 
 interface sectionProps {
@@ -39,40 +39,43 @@ const DCard: FC<sectionProps> = ({
     }
     const checker = ["name", "title", "edited", "created", "url", "homeworld"];
     return (
-        <section className={`search-detail-card-section-container ${isReverse ? "reverse" : ""}`} key={index}>
-            <div className={"search-detail-card-section"}>
-                <div className={"search-detail-card-section-container__wrapper"}>
+        <section className={`search-detail-card ${isReverse ? "reverse" : ""}`}
+                 key={index}>
+            <div className={"search-detail-card__container"}>
+                <div className={"search-detail-card__wrapper"}>
                     <div className={"id-box"}>
                         <p className={"id-box__number"}>{index + 1}</p>
                     </div>
                     <div className={"search-detail-card-content-box"}>
-                        <span className={"search-detail-card-title"}>{title}</span>
+                        <span className={"search-detail-card-content-box__title"}>{title}</span>
                     </div>
-                    <div className={"search-detail-card-action-box"}>
+                    <div className={"action-box"}>
                         {searchBy != "films" &&
-                            <button className={"search-detail-card-action-btn bg-red"} onClick={handleClick}>
+                            <button className={"action-box__btn"} onClick={handleClick}>
                                 {!isShow ? "expand" : "compress"} details
                             </button>}
                         {searchBy == "films" &&
-                            <button className={"search-detail-card-action-btn bg-red"} onClick={visitHandleClick}>
+                            <button className={"action-box__btn"}
+                                    onClick={visitHandleClick}>
                                 visit
                             </button>
                         }
                     </div>
                 </div>
                 {searchBy != "films" && <div
-                    className={`search-detail-card-section-container__details ${isShow ? "detail-show-box" : "d-none"} ${isAnim ? "out-anim" : ""}`}>
+                    className={`search-extra-detail-card ${isShow ? "detail-show-box" : "d-none"} ${isAnim ? "out-anim" : ""}`}>
                     <>
                         {
                             Object.entries(item).filter(([key]) => !checker.includes(key)).map(([key, value], index) => {
                                 return (
-                                    <div className={"search-detail-card-section-container__details__wrapper"}
-                                         key={index}>
-                                        <div className={"search-detail__box"}>
+                                    <div
+                                        className={"search-extra-detail-card__wrapper"}
+                                        key={index}>
+                                        <div className={"search-extra-detail-card__box"}>
                                         <span
-                                            className={"search-detail__key"}>{key.replace(/_/g, " ")}</span>
+                                            className={"search-extra-detail-card__key"}>{key.replace(/_/g, " ")}</span>
                                             <span
-                                                className={"search-detail__value"}>
+                                                className={"search-extra-detail-card__value"}>
                                             <>
                                                 {Array.isArray(value) && value.length}
                                                 {!Array.isArray(value) && value}

@@ -1,5 +1,5 @@
 import React, {FC, ReactElement} from 'react'
-import './style.css'
+import './style.scss'
 
 interface sectionProps {
     imgUrl: string,
@@ -22,11 +22,11 @@ const Banner: FC<sectionProps> = ({
         <section className={`card-section-container ${isTarget ? "target" : ""} ${isReverse ? "reverse" : ""}`}>
             <div>
                 <p>
-                    <span className={"card-title"}>{title}</span>
+                    <span className={"card-section-container__title"}>{title}</span>
                     {summary}
                 </p>
             </div>
-            <img src={imgUrl} className={"float-img"} alt={imgDesc}/>
+            <img src={imgUrl} className={"card-section-container__img"} alt={imgDesc}/>
         </section>
     )
 }

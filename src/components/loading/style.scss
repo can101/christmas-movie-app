@@ -1,0 +1,13 @@
+@import "src/assets/styles/root.scss";
+
+.loading-container {
+  height: 100vh;
+  @include center;
+}
+
+.loading-animation-box {
+  height: 500px;
+  @include tablet {
+    height: 300px;
+  }
+}

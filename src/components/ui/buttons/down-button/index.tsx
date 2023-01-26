@@ -1,6 +1,6 @@
 import React, {FC} from 'react'
 import {HiOutlineChevronDown} from 'react-icons/hi'
-import './style.css'
+import './style.scss'
 
 interface iconButtonProps {
     click?: () => void

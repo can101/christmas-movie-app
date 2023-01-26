@@ -1,0 +1,63 @@
+:root {
+  --icy-landscape: rgba(198, 236, 250, 0.7);
+  --big-yellow-streak: rgb(255, 232, 31);
+  --light-big-yellow-streak: rgba(255, 232, 31, 0.36);
+  --white: rgb(255, 255, 255);
+  --light-white: rgba(255, 255, 255, 0.71);
+  --extra-light-white: rgba(255, 255, 255, 0.28);
+  --dbl-extra-white: rgba(255, 255, 255, 0.09);
+  --dblx-extra-white: rgba(255, 255, 255, 0.02);
+  --christmas-sliver: rgba(254, 254, 254);
+  --cronation: rgba(236, 236, 236, 0.8);
+  --light-black-oak: rgba(79, 79, 79, 0.15);
+  --extra-light-umbra: rgba(31, 31, 31, 0.22);
+  --centre-stage: rgb(198, 199, 203);
+  --light-black: rgba(0, 0, 0, 0.66);
+  --brilliant-liquorice: rgb(85, 84, 84);
+  --existential-angst: rgb(9, 9, 11);
+  --black: rgb(0, 0, 0);
+  --dark-radial-gradient: radial-gradient(50% 59719.68% at 50% 50%, #060606 0%, #000000 100%);
+  --light-linear-gradient: linear-gradient(rgba(245, 246, 252, 0.02), rgba(14, 14, 14, 0.28));
+  --radius-value: 10px;
+}
+
+$medium: 900px;
+$small: 568px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+
+// @mixin mobile
+@mixin tablet {
+  @media (max-width: #{$medium}) {
+    @content;
+  }
+}
+
+// @mixin tablet
+@mixin mobile {
+  @media (max-width: #{$small}) {
+    @content;
+  }
+}
+
+// @mixin center
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// @mixin pseudoOverride
+@mixin pseudoOverride {
+  content: "";
+  position: absolute;
+  background-image: url("../../assets/images/png/snowflake-solid.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}

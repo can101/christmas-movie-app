@@ -1,0 +1,33 @@
+@import "./src/assets/styles/root.scss";
+
+.empty-block-box {
+  height: 300px;
+  @include center;
+  flex-direction: column;
+  color: var(--extra-light-white);
+  background: var(--existential-angst);
+  border-radius: 7px;
+  margin: 20px auto;
+}
+
+.search-rules {
+  height: 40vh;
+  border-radius: 7px;
+  margin: 20px auto 20px;
+  background: var(--existential-angst);
+  color: var(--extra-light-white);
+  @include center;
+  flex-direction: column;
+}
+
+.search-rules__description {
+  font-size: 1rem;
+  line-height: 1.5;
+  width: 80%;
+  margin: 0 auto;
+  text-transform: capitalize;
+  text-align: center;
+  @include tablet {
+    font-size: .8rem;
+  }
+}

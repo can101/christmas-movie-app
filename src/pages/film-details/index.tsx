@@ -1,5 +1,5 @@
 import React, {FC, ReactElement, useEffect} from 'react'
-import './style.css'
+import './style.scss'
 import {useDispatch, useSelector} from "react-redux";
 import {useNavigate, useParams} from 'react-router-dom'
 import filmFoundAsyncThunk from '../../features/filmFoundFeatures/filmFoundAsyncThunk'

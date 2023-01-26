@@ -1,0 +1,51 @@
+@import "src/assets/styles/root";
+
+footer {
+  box-sizing: border-box;
+  height: 180px;
+  @include center;
+  background: var(--existential-angst);
+  border-top-right-radius: var(--radius-value);
+  border-top-left-radius: var(--radius-value);
+
+  .info-title {
+    font-size: 18px;
+    color: #ffe81f;
+    font-weight: bold;
+  }
+
+  .footer-wrapper {
+    height: 100%;
+
+    @include center;
+    justify-content: space-around;
+
+    > div > ul {
+      display: flex;
+      gap: 20px;
+      margin-top: 20px;
+    }
+  }
+
+  .logo-and-slogan-box {
+    @include center;
+    flex-direction: column-reverse;
+
+    > span {
+      color: var(--existential-angst);
+      margin-top: 10px;
+    }
+  }
+
+  @include tablet {
+    height: auto;
+    .footer-wrapper {
+      flex-direction: column;
+      padding: 20px 0;
+    }
+    .logo-and-slogan-box {
+      margin-bottom: 30px;
+    }
+  }
+}
+

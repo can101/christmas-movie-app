@@ -1,0 +1,26 @@
+@import "../src/assets/styles/root.scss";
+
+.error-container {
+  height: 100vh;
+  @include center;
+  flex-direction: column;
+
+  & > div {
+    color: var(--big-yellow-streak);
+
+    & > span {
+      background-color: var(--dbl-extra-white);
+      backdrop-filter: blur(30px);
+      padding: 10px;
+      margin-right: 5px;
+      border-radius: 5px;
+    }
+  }
+}
+
+.loading-animation-box {
+  height: 500px;
+  @include tablet {
+    height: 80vh;
+  }
+}

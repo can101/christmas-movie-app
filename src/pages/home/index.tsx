@@ -3,7 +3,7 @@ import Carousel from '../../components/carousel'
 import imgPath from '../../assets/images/png/a1.png'
 import sImgPath from '../../assets/images/png/second.png'
 import yImgPath from '../../assets/images/png/yoda.png'
-import './style.css'
+import './style.scss'
 import Card from "../../components/card";
 
 const index: FC = (): ReactElement => {

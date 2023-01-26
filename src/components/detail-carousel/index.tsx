@@ -2,7 +2,7 @@ import React, {FC, ReactElement, useEffect, useState} from 'react'
 import SliderDetailCard from '../ui/card/detail-slider-card'
 // @ts-ignore
 import Slider from "react-slick";
-import './style.css'
+import './style.scss'
 import {useSelector} from 'react-redux'
 import Spinner from "../ui/spinner";
 import speciesPath from '../../assets/images/icons/png/species.png'

@@ -1,6 +1,5 @@
 .details-container{
-    /*background: #ffe81f;*/
-    background: rgb(9 9 11);
+    background: var(--existential-angst);
     height: auto;
     margin: 10px 0;
     border-radius: 10px;
@@ -8,10 +7,6 @@
 }
 
 .back-button-wrapper{
-    /*padding: 30px 0 0 130px;*/
-    /*display: flex;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
     width: 80%;
     margin: 0 auto;
     padding-top: 40px;

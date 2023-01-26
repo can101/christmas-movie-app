@@ -4,7 +4,7 @@ import {AiOutlineSearch} from 'react-icons/ai'
 import {VscClose} from 'react-icons/vsc'
 import SearchAsyncThunk from '../../../../features/searchFeature/searchAsyncThunk'
 import {useDispatch} from 'react-redux'
-import './style.css'
+import './style.scss'
 
 type  inputTypes = "text" | "numeric" | "search";
 

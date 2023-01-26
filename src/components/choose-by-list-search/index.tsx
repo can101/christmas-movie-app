@@ -1,5 +1,5 @@
 import React, {FC, ReactElement, useState} from "react";
-import "./style.css";
+import "./style.scss";
 
 interface chooseProps {
     list: string[],
@@ -15,10 +15,10 @@ const SearchDetails: FC<chooseProps> = ({list, onClick, value}): ReactElement =>
 
     return <div className={"choose-box"}>
         {list.map((item, index) => {
-            return <div className={`choose-item ${value == item && "selected-item"}`} onClick={() => {
+            return <div className={`choose-box__item ${value == item ? "selected-item" : ''}`} onClick={() => {
                 onClick(item)
             }} key={index}>
-                <span className={"choose-item-text"}>{item}</span>
+                <span className={"choose-box__text"}>{item}</span>
             </div>
         })}
     </div>;

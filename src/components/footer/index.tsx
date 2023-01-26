@@ -4,7 +4,7 @@ import {FaFacebook, FaInstagram, FaTwitter, FaYoutube} from "react-icons/fa";
 import imgPath from '../../assets/images/png/logo-rm-bg.png'
 import {IconContext} from "react-icons";
 import {Link} from "react-router-dom";
-import './style.css'
+import './style.scss'
 
 const Footer: FC = (): ReactElement => {
     return (

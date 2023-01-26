@@ -1,6 +1,4 @@
-@import './reset.css';
-@import './normalize.css';
-@import './root.css';
+@import './reset.scss','./normalize.scss','./root.scss';
 
 html {
     font-family: 'Poppins', sans-serif;

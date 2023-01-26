@@ -1,6 +1,6 @@
 import React, {FC, ReactElement, ReactNode} from 'react'
 // @ts-ignore
-import './style.css'
+import './style.scss'
 
 interface sliderCardProps {
     length: number,

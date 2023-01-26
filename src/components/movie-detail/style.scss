@@ -1,0 +1,25 @@
+@import "src/assets/styles/root.scss";
+
+.extra-detail-container {
+  color: #fff;
+  margin: 35px auto;
+  text-align: center;
+  @include center;
+  gap: 20px;
+  @include tablet {
+    flex-direction: column;
+  }
+}
+
+.extra-detail-box {
+  display: flex;
+  gap: 5px;
+
+  & > span:first-child {
+    text-transform: capitalize;
+  }
+
+  & > span:last-child {
+    color: var(--big-yellow-streak);
+  }
+}

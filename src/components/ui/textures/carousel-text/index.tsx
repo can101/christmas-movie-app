@@ -1,5 +1,5 @@
 import React, {FC, ReactElement} from 'react'
-import './style.css'
+import './style.scss'
 import {useNavigate} from "react-router-dom";
 
 interface textProps {

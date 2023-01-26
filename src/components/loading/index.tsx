@@ -1,7 +1,7 @@
 import React, {FC, ReactElement} from 'react'
 import {Player} from '@lottiefiles/react-lottie-player';
 import jsonPath from '../../assets/json/loading.json'
-import './style.css'
+import './style.scss'
 
 const index: FC = (): ReactElement => {
 
@@ -11,7 +11,7 @@ const index: FC = (): ReactElement => {
                 autoplay
                 loop
                 src={jsonPath}
-                className={"loading-animetion-box"}
+                className={"loading-animation-box"}
             >
             </Player>
         </div>

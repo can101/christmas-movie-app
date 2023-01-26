@@ -1,11 +1,7 @@
-.detail-show-box{
-    background-color: blue;
-}
 .search-details__description{
-    /*background-color: red;*/
     text-transform: capitalize;
     font-weight: 500;
-    color: #ffe81f;
+    color: var(--big-yellow-streak);
     letter-spacing: 2px;
     margin: 20px 0;
 }

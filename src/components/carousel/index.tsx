@@ -2,7 +2,7 @@ import React, {FC, ReactElement, ReactNode, useEffect} from 'react'
 import Video from '../../assets/videos/bg-video.mp4'
 // @ts-ignore
 import Slider from "react-slick";
-import './style.css'
+import './style.scss'
 import Text from '../ui/textures/carousel-text'
 import DownButton from "../ui/buttons/down-button";
 import {useDispatch, useSelector} from 'react-redux'

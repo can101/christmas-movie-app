@@ -1,18 +1,18 @@
+@import '../src/assets/styles/root.scss';
+
 .spinner-container {
     width: 100%;
     height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include center;
 }
 
 .spinner-box {
     height: 70px;
     width: 70px;
     display: inline-block;
-    border: 10px solid #555454;
+    border: 10px solid var(--existential-angst);
     border-radius: 50%;
-    border-top: 10px solid #ffffff;
+    border-top: 10px solid var(--white);
     animation: spin 1s linear infinite;
 }
 

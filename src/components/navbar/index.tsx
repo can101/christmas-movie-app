@@ -7,7 +7,7 @@ import {IoIosSearch} from 'react-icons/io'
 import IconButton from '../ui/buttons/icon-button'
 // @ts-ignore
 import {IconContext} from "react-icons";
-import './style.css'
+import './style.scss'
 import {Link, useNavigate } from "react-router-dom";
 
 const Navbar: FC = (): ReactElement => {

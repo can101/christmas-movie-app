@@ -3,7 +3,7 @@ import {Outlet} from 'react-router-dom'
 import Banner from "../../banner";
 import Navbar from "../../navbar";
 import Footer from "../../footer";
-import "./style.css"
+import "./style.scss"
 
 function Index() {
     return (

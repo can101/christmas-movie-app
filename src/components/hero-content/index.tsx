@@ -1,5 +1,5 @@
 import React, {FC, ReactElement,} from 'react';
-import './style.css'
+import './style.scss'
 
 interface HeroContentProps {
     title: string;

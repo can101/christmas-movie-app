@@ -1,0 +1,40 @@
+@import "src/assets/styles/root.scss";
+
+.choose-box {
+  margin: 10px 0;
+  gap: 2px;
+  @include center;
+
+  &__item {
+    background-color: var(--existential-angst);
+    padding: 15px 20px;
+    border-radius: 5px;
+    backdrop-filter: blur(5px);
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    scale: .88;
+    color: var(--white);
+
+    &:hover:not(.selected-item) {
+      cursor: pointer;
+      animation-delay: .2s;
+      animation: jello-horizontal .9s linear both;
+    }
+
+    &.selected-item {
+      background-color: var(--big-yellow-streak);
+      color: var(--black);
+      transition: all .2s ease;
+      user-select: none;
+    }
+  }
+
+  @include tablet {
+      flex-wrap: wrap;
+      width: 100%;
+      margin: 10px auto;
+    .choose-box__item {
+      padding: 10px 20px;
+    }
+  }
+}

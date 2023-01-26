@@ -1,0 +1,88 @@
+.search-input-container {
+  width: 100%;
+  position: relative;
+
+  & > input {
+    box-sizing: border-box;
+    background-color: var(--existential-angst);
+    border: 3px solid transparent;
+    border-radius: 8px;
+    height: 60px;
+    width: 100%;
+    padding: 10px 10px 10px 60px;
+    outline: none;
+    color: white;
+    overflow: hidden;
+    caret-color: var(--big-yellow-streak);
+    transition: all 200ms ease-in-out;
+
+    &::placeholder {
+      text-transform: lowercase;
+      color: var(--light-black-oak);
+    }
+
+    &:focus {
+      border-color: var(--big-yellow-streak);
+      background: none;
+    }
+  }
+}
+
+.search-input-container > input::placeholder {
+  text-transform: lowercase;
+  color: var(--extra-light-white);
+}
+
+.search-input-container > input:focus {
+  border-color: var(--big-yellow-streak);
+  background: none;
+}
+
+.start-icon {
+  color: var(--big-yellow-streak);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px;
+  z-index: 10;
+}
+
+.delete-icon {
+  color: var(--big-yellow-streak);
+  position: absolute;
+  height: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 15px;
+  z-index: 10;
+  cursor: pointer;
+  overflow: hidden;
+
+  & > span {
+    height: 40px;
+    width: 40px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.09);
+    backdrop-filter: blur(10px);
+    animation: slide-right-to-left 1s ease-in-out;
+
+    &:hover > svg {
+      animation: jello-horizontal .9s linear both infinite;
+    }
+  }
+}
+
+
+@keyframes slide-right-to-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

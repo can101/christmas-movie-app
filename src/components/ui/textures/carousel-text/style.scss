@@ -1,0 +1,78 @@
+@import "src/assets/styles/root.scss";
+
+.carousel-text-container {
+  border-radius: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  height: 270px;
+  color: var(--extra-light-white);
+  margin: 0 20px;
+  cursor: pointer;
+
+  & > div {
+    display: flex;
+    justify-content: center;
+  }
+
+  & > div:nth-child(1) {
+    height: 10%;
+    align-items: end;
+    font-size: 15px;
+    padding-bottom: 5px;
+    font-weight: 400;
+  }
+
+  & > div:nth-child(2) {
+    font-size: 50px;
+    line-height: 1.2;
+    height: 80%;
+    overflow: hidden;
+    font-weight: 900;
+    align-items: center;
+    font-family: 'Fjalla One', sans-serif;
+    transition: 1s linear ease-in;
+    letter-spacing: .8px;
+  }
+
+  & > div:nth-child(3) {
+    height: 10%;
+    padding-top: 5px;
+    align-items: self-start;
+    font-size: 15px;
+  }
+}
+
+.carousel-text-container > div:nth-child(2) {
+  font-size: 50px;
+  line-height: 1.2;
+  height: 80%;
+  overflow: hidden;
+  font-weight: 900;
+  align-items: center;
+  font-family: 'Fjalla One', sans-serif;
+  transition: 1s linear ease-in;
+  letter-spacing: .8px;
+  @include tablet {
+    font-size: 50px;
+  }
+}
+
+.carousel-text-container > div:nth-child(3) {
+  height: 10%;
+  padding-top: 5px;
+  align-items: self-start;
+  font-size: 15px;
+}
+
+.slick-current > div > .carousel-text-container {
+  color: var(--white);
+  transition: 1s ease-in linear;
+
+  & > div:nth-child(2) {
+    text-shadow: 5px 5px 0 var(--big-yellow-streak);
+  }
+}
+
+link-reset {
+  text-decoration: none;
+}

@@ -1,5 +1,5 @@
 import React, {FC, ReactElement, useEffect, useState} from 'react'
-import './style.css'
+import './style.scss'
 import {useSelector} from 'react-redux'
 import Spinner from "../ui/spinner";
 

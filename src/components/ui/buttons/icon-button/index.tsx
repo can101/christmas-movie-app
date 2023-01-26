@@ -1,5 +1,5 @@
 import React, {FC, ReactNode} from 'react'
-import './style.css'
+import './style.scss'
 
 interface iconButtonProps {
     icon: ReactNode,
