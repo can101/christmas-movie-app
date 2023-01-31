@@ -40,6 +40,9 @@
 
   &.reverse {
     flex-direction: row-reverse;
+    @include tablet {
+      flex-direction: column-reverse;
+    }
   }
 
   &__image {
