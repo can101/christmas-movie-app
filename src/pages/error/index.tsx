@@ -25,8 +25,7 @@ const index: FC = (): ReactElement => {
                 loop
                 src={jsonPath}
                 className={"loading-animation-box"}
-            >
-            </Player>
+            />
             <div>
                 <span>
                 {count}
