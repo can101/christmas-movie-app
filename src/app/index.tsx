@@ -16,7 +16,6 @@ import ReactGA from 'react-ga';
 
 //   gtag('config', 'G-BB0X54LPH6');
 // </script>
-
 const TRACKING_ID = "G-BB0X54LPH6"; // OUR_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
 

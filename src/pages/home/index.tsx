@@ -5,8 +5,15 @@ import sImgPath from '../../assets/images/png/second.png'
 import yImgPath from '../../assets/images/png/yoda.png'
 import './style.scss'
 import Card from "../../components/card";
+import ReactGA from 'react-ga';
+
+const TRACKING_ID = "G-BB0X54LPH6"; // OUR_TRACKING_ID
+ReactGA.initialize(TRACKING_ID);
+ReactGA.pageview(document.location.pathname);
+
 
 const index: FC = (): ReactElement => {
+
    const cardList= [
        {
            title:"What is Star Wars ?",

@@ -10,6 +10,11 @@ import IconButton from "../../components/ui/buttons/icon-button";
 import Spinner from "../../components/ui/spinner";
 import Carousel from "../../components/detail-carousel";
 import Detail from '../../components/movie-detail'
+import ReactGA from 'react-ga';
+
+const TRACKING_ID = "G-BB0X54LPH6"; // OUR_TRACKING_ID
+ReactGA.initialize(TRACKING_ID);
+ReactGA.pageview(document.location.pathname);
 
 const index: FC = (): ReactElement => {
     const navigate = useNavigate()
