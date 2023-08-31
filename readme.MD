@@ -1,6 +1,6 @@
 <div align="center">
 <br/>
-<a href="https://lefine.netlify.app/">
+<a href="https://the-christmas-star-wars.netlify.app">
 <img src="src/assets/images/png/logo-rm-bg.png"
 height="128"
 alt="Lefine logo"
@@ -13,7 +13,7 @@ style="border-radius:10px;"
 
 ## Installation
 
-To install Lefine, follow these steps:
+To install christmas-movie-app, follow these steps:
 Clone the repository:
 
 ```
